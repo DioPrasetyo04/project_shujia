@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('about');
             $table->unsignedBigInteger('duration');
             $table->unsignedBigInteger('price')->default(0);
-            $table->boolean('is_active')->default(false);
+            $table->boolean('is_popular')->default(false);
             $table->foreignId('category_id')->constrained('categories', 'id')->cascadeOnDelete();
             $table->softDeletes();
             $table->timestamps();
