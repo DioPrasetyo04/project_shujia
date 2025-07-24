@@ -2,12 +2,10 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\HomeService;
-use App\Models\HomeServices;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Fieldset;
@@ -23,7 +21,7 @@ use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\HomeServicesResource\Pages;
-use App\Filament\Resources\HomeServicesResource\RelationManagers;
+use App\Filament\Resources\HomeServicesResource\RelationManagers\TestimonialsRelationManager;
 
 class HomeServicesResource extends Resource
 {
@@ -167,7 +165,7 @@ class HomeServicesResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            TestimonialsRelationManager::class
         ];
     }
 
