@@ -18,7 +18,7 @@ class Category extends Model
         'photo_white',
     ];
 
-    public function setNameAtrribute($value)
+    public function setNameAttribute($value)
     {
         $this->attributes['name'] = $value;
         $this->attributes['slug'] = trim($value) ? Str::slug($value) : Str::slug($value);

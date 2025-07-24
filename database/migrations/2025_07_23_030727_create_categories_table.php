@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('photo')->nullable();
             $table->string('photo_white')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

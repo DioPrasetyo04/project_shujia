@@ -20,13 +20,15 @@ class RoleSeeder extends Seeder
         $userAdmin = User::create([
             'name' => 'Admin Shujia',
             'email' => 'admin@shujia.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('passwordd'),
+            'email_verified_at' => now(),
         ]);
 
         $userShujia = User::create([
             'name' => 'User Shujia',
             'email' => 'user@shujia.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('passwordd'),
+            'email_verified_at' => now(),
         ]);
 
         $userAdmin->assignRole($roleAdmin);
