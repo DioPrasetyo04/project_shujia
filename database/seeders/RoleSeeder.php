@@ -31,7 +31,9 @@ class RoleSeeder extends Seeder
             'email_verified_at' => now(),
         ]);
 
+        $userAdmin->syncRoles($roleAdmin);
         $userAdmin->assignRole($roleAdmin);
+        $userShujia->syncRoles($roleUser);
         $userShujia->assignRole($roleUser);
     }
 }

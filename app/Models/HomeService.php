@@ -44,4 +44,9 @@ class HomeService extends Model
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    public function transactionDetails(): HasMany
+    {
+        return $this->hasMany(TransactionDetails::class);
+    }
 }

@@ -27,11 +27,12 @@ class BookingTransaction extends Model
         'is_paid',
     ];
 
+    // harus dijalankan setelah model dipanggil
     public static function generateUniqueTrxId()
     {
         $prefix = 'Project_SHUJIA-';
         do {
-            $$randomId = $prefix . mt_rand(100000, 999999);
+            $randomId = $prefix . mt_rand(100000, 999999);
             // tidak boleh ada data sama idnya self:where exists
         } while (self::where('booking_trx_id', $randomId)->exists());
 
