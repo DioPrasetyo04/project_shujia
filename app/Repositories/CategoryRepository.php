@@ -13,7 +13,7 @@ class CategoryRepository implements CategoryInterface
 {
     public function getAllDataCategory(): Collection | AnonymousResourceCollection
     {
-        return Category::query()->get();
+        return Category::all();
     }
 
     public function showDataCategory($category): JsonResource
