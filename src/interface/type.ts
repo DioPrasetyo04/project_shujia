@@ -20,7 +20,7 @@ export interface Category {
   name: string;
   slug: string;
   photo: string;
-  homeServices_count: number;
+  home_services_count: number;
   // dalam kurung dengan tipe data array karena satu category bisa memiliki banyak home service
   home_services: HomeService[];
   popular_services: HomeService[];

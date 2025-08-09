@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path=" /" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/cart" element={<MyCartPage />} />
         {/* /service/:slug untuk proses parsing data ke url bahwa akan menggunakan slug dalam proses ,melihat detail data service dari backend */}
         <Route path="/service/:slug" element={<DetailsPage />} />
