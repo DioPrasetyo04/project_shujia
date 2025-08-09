@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Shujia-Booking-Form</title>
+</head>
+
+<body>
+    <main class="relative min-h-screen max-w-screen w-full overflow-hidden mx-auto bg-[#F4F5F7]">
+        <div id="Background" class="absolute left-0 right-0 top-0">
+            <img src="./assets/images/backgrounds/orange.png" alt="image"
+                class="h-[300px] sm:h-[300px] lg:h-[350px] md:h-[250px] w-full object-cover object-bottom">
+        </div>
+        <nav id="NavTop" class="fixed left-0 right-0 top-[16px] z-30 transition-all duration-300">
+            <div id="ContainerNav" class="relative mx-auto max-w-[640px] px-5 py-2 rounded-full">
+                <div class="relative flex justify-center items-center transition-all duration-300 h-[48px]">
+                    <a href="./my-cart.html" class="absolute left-0 transition-all duration-300">
+                        <div id="iconArrow"
+                            class="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full bg-white">
+                            <img src="assets/images/icons/back.svg" alt="icon" class="h-[22px] w-[22px] shrink-0">
+                        </div>
+                    </a>
+                    <h1 class="text-white font-semibold transition-all duration-300" id="Title">Booking Services</h1>
+                </div>
+            </div>
+        </nav>
+
+        <section id="ProgressBar" class="relative px-5 pt-[92px]">
+            <div class="relative flex items-center justify-center">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="relative z-10 flex h-[25px] justify-center items-center">
+                        <div class="relative h-3 w-[100px] rounded-full bg-white"></div>
+                        <div class="absolute right-0 top-0 translate-x-1/2">
+                            <div class="flex flex-col items-center gap-[6px]">
+                                <div
+                                    class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-white text-xs font-bold leading-[18px]">
+                                    1
+                                </div>
+                                <p class="text-xs font-semibold leading-[18px] text-white">Booking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="relative flex w-full h-[25px] justify-center items-center">
+                        <div class="relative h-3 w-[200px] rounded-full bg-[#E68B6D]"></div>
+                        <div class="absolute right-1/2 top-0 translate-x-1/2">
+                            <div class="flex flex-col items-center gap-[6px]">
+                                <div
+                                    class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#FFBFA9] text-xs font-bold leading-[18px]">
+                                    2
+                                </div>
+                                <p class="text-xs font-semibold leading-[18px] text-[#FFBFA9]">Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="relative z-10 flex h-[25px] w-[60px] items-center">
+                        <div class="h-3 w-[60px] rounded-full bg-[#E68B6D]"></div>
+                        <div class="absolute left-0 top-0 -translate-x-1/2">
+                            <div class="flex flex-col items-center gap-[6px]">
+                                <div
+                                    class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#FFBFA9] text-xs font-bold leading-[18px] text-[#C2836D]">
+                                    3</div>
+                                <p class="text-xs font-semibold leading-[18px] text-[#FFBFA9]">Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative mt-[100px] flex flex-col px-5 pb-5">
+            <form action="./payment.html">
+                <header class="flex flex-col justify-center items-center gap-[2px]">
+                    <h1 class="text-[26px] font-extrabold leading-[39px] text-white">
+                        Booking Form
+                    </h1>
+                    <p class="text-white">Lorem dolor si amet data asli</p>
+                </header>
+                <div class="mt-[40px] flex flex-col gap-5">
+                    <section id="WorkingSchedule"
+                        class="flex flex-col gap-4 rounded-3xl border border-[#E4E5E9] bg-white px-[14px] py-[14px] lg:w-[640px] md:w-[440px] w-screen mx-auto justify-center">
+                        <div class="flex items-center justify-between left-0 right-0">
+                            <h3 class="font-semibold">Working Schedule</h3>
+                            <button type="button" data-expand="WorkingScheduleJ" data-open="false">
+                                <img src="assets/images/icons/bottom-booking-form.svg" alt="Icon Bottom"
+                                    class="w-[32px] h-[32px] shrink-0 transition-all duration-300">
+                            </button>
+                        </div>
+                        <div id="WorkingScheduleJ" class="flex flex-col gap-4">
+                            <label for="Date" class="flex flex-col gap-2">
+                                <h4 class="font-semibold leading-[21px]">Date</h4>
+                                <div
+                                    class="relative h-[52px] w-full overflow-hidden rounded-full border border-[#E4E5E9]">
+                                    <img src="./assets/images/icons/date-booking-form.svg" alt="Icon"
+                                        class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2">
+                                    <input type="date" name="date" id="Date"
+                                        class="pl-[52px] pr-[20px] h-full w-full rounded-full bg-[#F4F5F7] font-semibold transition-all duration-300 border border-[#E4E5E9] focus-within:border-[#D04B1E]"
+                                        value=`${date}` required>
+                                </div>
+                            </label>
+                            <label for="Time" class="flex flex-col gap-2">
+                                <h4 class="font-semibold leading-[21px]">Start Time At</h4>
+                                <div
+                                    class="relative h-[52px] w-full overflow-hidden rounded-full border border-[#E4E5E9]">
+                                    <img src="./assets/images/icons/clock-booking-form.svg" alt="Icon"
+                                        class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2">
+                                    <input type="time" name="time" id="Time"
+                                        class="pl-[52px] pr-[20px] h-full w-full rounded-full bg-[#F4F5F7] font-semibold transition-all duration-300 border border-[#E4E5E9] focus-within:border-[#D04B1E]"
+                                        value="12:00" required>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+                    <section id="PersonalInformations"
+                        class="flex flex-col gap-4 rounded-3xl border border-[#E4E5E9] bg-white px-[14px] py-[14px] lg:w-[640px] md:w-[440px] w-screen mx-auto justify-center">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold">Personal Informations</h3>
+                            <button type="button" data-expand="PersonalInformationsJ" data-open="false">
+                                <img src="assets/images/icons/bottom-booking-form.svg" alt="icon"
+                                    class="h-[32px] w-[32px] shrink-0 transition-all duration-300">
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-4" id="PersonalInformationsJ">
+                            <label for="Name" class="flex flex-col gap-2">
+                                <h4 class="font-semibold leading-[21px]">Full Name</h4>
+                                <div
+                                    class="relative h-[52px] w-full overflow-hidden rounded-full transition-all duration-300 border border-[#E4E5E9] focus-within:border-[#D04B1E]">
+                                    <img src="./assets/images/icons/profil-booking-form.svg" alt="Icon"
+                                        class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2">
+                                    <input type="text" name="name" id="Name"
+                                        class="pl-[52px] pr-[20px] h-full w-full rounded-full bg-[#F4F5F7] font-semibold transition-all duration-300"
+                                        placeholder="John Doe" required>
+                                </div>
+                            </label>
+                            <label for="Email" class="flex flex-col gap-2">
+                                <h4 class="font-semibold leading-[21px]">Email Address</h4>
+                                <div
+                                    class="relative h-[52px] w-full overflow-hidden rounded-full transition-all duration-300 border border-[#E4E5E9] focus-within:border-[#D04B1E]">
+                                    <img src="./assets/images/icons/amplop-booking-form.svg" alt="Icon"
+                                        class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2">
+                                    <input type="text" name="email" id="Email"
+                                        class="pl-[52px] pr-[20px] h-full w-full rounded-full bg-[#F4F5F7] font-semibold transition-all duration-300"
+                                        placeholder="JohnDoe@gmail.com" required>
+                                </div>
+                            </label>
+                            <label for="No_HP" class="flex flex-col gap-2">
+                                <h4 class="font-semibold leading-[21px]">No. Phone</h4>
+                                <div
+                                    class="relative h-[52px] w-full overflow-hidden rounded-full transition-all duration-300 border border-[#E4E5E9] focus-within:border-[#D04B1E]">
+                                    <img src="./assets/images/icons/telepon-booking-form.svg" alt="Icon"
+                                        class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2">
+                                    <input type="tel" name="HP" id="No_HP"
+                                        class="pl-[52px] pr-[20px] h-full w-full rounded-full bg-[#F4F5F7] font-semibold transition-all duration-300"
+                                        placeholder="8123456789" required>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+                    <section id="YourHomeAddress"
+                        class="flex flex-col gap-4 rounded-3xl border border-[#E4E5E9] bg-white px-[14px] py-[14px] lg:w-[640px] md:w-[440px] w-screen mx-auto justify-center">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold leading-[21px]">Your Home Address</h3>
+                            <button type="button" data-expand="YourHomeAddressJ" data-open="false">
+                                <img src="assets/images/icons/bottom-booking-form.svg" alt="Icon Bottom"
+                                    class="h-[32px] w-[32px] shrink-0 transition-all duration-300">
+                            </button>
+                        </div>
+                        <div id="YourHomeAddressJ" class="flex flex-col gap-4">
+                            <label class="flex flex-col gap-2">
+                                <h4 class="font-semibold">Address</h4>
+                                <div
+                                    class="relative h-[110px] w-full overflow-hidden rounded-[22px] border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                    <textarea placeholder="Enter your complete address" required
+                                        class="h-full w-full pl-[50px] pr-[14px] pt-[14px] font-semibold leading-7 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none"
+                                        name="" id=""></textarea>
+                                    <img src="assets/images/icons/school-booking-form.svg" alt="icon"
+                                        class="absolute left-[14px] top-[14px] h-6 w-6 shrink-0" />
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+                <button type="submit"
+                    class="mt-[44px] flex justify-center items-center mx-auto w-screen lg:w-[640px] rounded-full bg-[#D04B1E] py-[14px] font-semibold text-white transition-all duration-300 hover:shadow-[0px_4px_10px_0px_#D04B1E80]">Continue
+                    to Payment</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+<script src="./assets/js/booking-form.js"></script>
+
+</html>

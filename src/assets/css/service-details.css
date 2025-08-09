@@ -1,0 +1,35 @@
+/* @keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animation-swiper {
+  animation: slider 10s linear infinite;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d04b1e;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: -20px;
+  color: #d04b1e;
+}
+
+.swiper-button-prev {
+  right: -20px;
+  color: #d04b1e;
+}

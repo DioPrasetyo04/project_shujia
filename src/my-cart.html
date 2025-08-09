@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Shujia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- connect to google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <main
+        class="relative mx-auto min-h-screen w-full bg-[#F4F5F7] overflow-hidden pb-[200px] lg:pb-[310px] md:pb-[300px] sm:pb-[200px]">
+        <div id="Background" class="absolute left-0 right-0 top-0">
+            <img src="assets/images/backgrounds/orange.png" alt="orange"
+                class="h-[320px] w-full object-cover object-bottom">
+        </div>
+        <nav id="NavTop" class="fixed left-0 right-0 top-[16px] z-30 transition-all duration-300">
+            <div id="ContainerNav" class="relative mx-auto max-w-[640px] px-5 py-2 rounded-full">
+                <div class="relative flex justify-center items-center transition-all duration-300 h-[48px]">
+                    <a href="./service-details.html" class="absolute left-0 transition-all duration-300">
+                        <div id="iconArrow"
+                            class="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full bg-white">
+                            <img src="assets/images/icons/back.svg" alt="icon" class="h-[22px] w-[22px] shrink-0">
+                        </div>
+                    </a>
+                    <h1 class="text-white font-semibold transition-all duration-300" id="Title">My Cart</h1>
+                </div>
+            </div>
+        </nav>
+
+        <section class="relative flex flex-col gap-[20px] px-5 pt-[200px] max-w-[840px] mx-auto">
+            <section id="HomeServices"
+                class="relative flex flex-col gap-4 rounded-3xl border border-[#E4E5E9] bg-white px-[14px] py-[14px] shadow-md">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-semibold text-2xl">Home Services</h2>
+                    <button id="homeServices" type="button" data-expand="HomeServicesJ" data-open="true">
+                        <img id="iconBottomArrow" src="assets/images/icons/bottom-booking-form.svg" alt="icon"
+                            class="h-[32px] w-[32px] rotate-180 shrink-0 transition-all duration-300">
+                    </button>
+                </div>
+                <div class="flex flex-col gap-4" id="HomeServicesJ">
+                    <div class="card flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-[80px] h-[80px] flex items-center shrink-0 justify-center overflow-hidden rounded-3xl">
+                                <img src="assets/images/thumbnails/clean-mini-cart.png" alt="image"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="line-clamp-2 h-[42px] text-sm font-semibold leading-[21px]">Home Family
+                                    Theater Best Lights Installation</h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/coint.svg" alt="icon" class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">Rp 8.489.391</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/clock-cart.svg" alt="icon"
+                                            class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">15 Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="shrink-0">
+                            <img src="assets/images/icons/garbage.svg" alt="icon" class="size-[32px] shrink-0">
+                        </button>
+                    </div>
+                    <hr class="border-[#E4E5E9] h-[14px]">
+                    <div class="card flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-[80px] h-[80px] flex items-center shrink-0 justify-center overflow-hidden rounded-3xl">
+                                <img src="assets/images/thumbnails/clean-mini-cart.png" alt="image"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="line-clamp-2 h-[42px] text-sm font-semibold leading-[21px]">Home Family
+                                    Theater Best Lights Installation</h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/coint.svg" alt="icon" class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">Rp 8.489.391</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/clock-cart.svg" alt="icon"
+                                            class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">15 Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="shrink-0">
+                            <img src="assets/images/icons/garbage.svg" alt="icon" class="size-[32px] shrink-0">
+                        </button>
+                    </div>
+                    <hr class="border-[#E4E5E9] h-[14px]">
+                    <div class="card flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-[80px] h-[80px] flex items-center shrink-0 justify-center overflow-hidden rounded-3xl">
+                                <img src="assets/images/thumbnails/clean-mini-cart.png" alt="image"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="line-clamp-2 h-[42px] text-sm font-semibold leading-[21px]">Home Family
+                                    Theater Best Lights Installation</h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/coint.svg" alt="icon" class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">Rp 8.489.391</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/icons/clock-cart.svg" alt="icon"
+                                            class="h-4 w-4 shrink-0">
+                                        <p class="text-xs leading-[18px] text-[#43484C]">15 Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="shrink-0">
+                            <img src="assets/images/icons/garbage.svg" alt="icon"
+                                class="w-[32px] h-[32px] shrink-0 transition-all duration-300">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="BookingDetails"
+                class="flex flex-col gap-4 rounded-3xl border border-[#E4E5E9] bg-white px-[14px] py-[14px] shadow-md">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-semibold text-2xl">Booking Details</h2>
+                    <button id="bookingDetails" type="button" class="shrink-0" data-expand="BookingDetailsJ"
+                        data-open="true">
+                        <img id="iconBottomArrow" src="assets/images/icons/bottom-booking-form.svg"
+                            alt="Icon Bottom Arrow" class="w-[32px] h-[32px] rotate-180 transition-all duration-300">
+                    </button>
+                </div>
+                <div id="BookingDetailsJ" class="flex flex-col gap-4">
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="assets/images/icons/note-payment.svg" alt="icon"
+                                class="h-[24px] w-[24px] shrink-0">
+                            <p class="text-[#43484C]">Sub Total</p>
+                        </div>
+                        <strong class="font-semibold">Rp 180.394.392</strong>
+                    </div>
+                    <hr class="border-[#E4E5E9] h-[14px]">
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="assets/images/icons/note-payment.svg" alt="icon"
+                                class="h-[24px] w-[24px] shrink-0">
+                            <p class="text-[#43484C]">Tax 11%</p>
+                        </div>
+                        <strong class="font-semibold">Rp 18.495.699</strong>
+                    </div>
+                    <hr class="border-[#E4E5E9] h-[14px]">
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="assets/images/icons/note-payment.svg" alt="icon"
+                                class="h-[24px] w-[24px] shrink-0">
+                            <p class="text-[#43484C]">Insurance</p>
+                        </div>
+                        <strong class="font-semibold">Free for All </strong>
+                    </div>
+                    <hr class="border-[#E4E5E9] h-[14px]">
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="assets/images/icons/note-payment.svg" alt="icon"
+                                class="h-[24px] w-[24px] shrink-0">
+                            <p class="text-[#43484C]">Service Tools</p>
+                        </div>
+                        <strong class="font-semibold">Free for All</strong>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="Adverticement"
+            class="relative flex justify-center items-center pt-[100px] px-5 lg:px-5 md:px-5 sm:px-10">
+            <a href="#">
+                <img src="./assets/images/backgrounds/adverticement.png" alt="icon"
+                    class="h-[240px] w-full sm:h-[240px] md:h-[240px] lg:h-[340px]">
+            </a>
+        </section>
+
+        <nav class="fixed bottom-5 left-0 right-0 z-30 mx-auto w-full">
+            <div class="mx-auto max-w-[640px] px-5">
+                <div class="flex items-center gap-[45px] rounded-[24px] bg-[#030504] px-[20px] py-[14px]">
+                    <div>
+                        <strong class="whitespace-nowrap text-[22px] font-extrabold leading-[33px] text-white">Rp
+                            8.394.391</strong>
+                        <p class="text-sm leading-[21px] text-white">Grand Total</p>
+                    </div>
+                    <a href="./booking-form.html" class="w-full">
+                        <p
+                            class="w-full rounded-full bg-[#D04B1E] px-[18px] py-[14px] text-center font-semibold text-white transition-all duration-300 hover:shadow-[0px_4px_10px_0px_#D04B1E80]">
+                            Continue</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </main>
+</body>
+
+<script src="./assets/js/my-cart.js"></script>
+
+</html>
